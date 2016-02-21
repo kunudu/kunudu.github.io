@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Urban Nilsson</title>
-  <meta name="description" content="My experimentations in the world of programming
-">
+  <title>Chip-8</title>
+  <meta name="description" content="  My attempt at creating a Chip-8 emulator in JavaScript.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.kunudu.com/">
+  <link rel="canonical" href="http://www.kunudu.com/2014/10/01/chip8.html">
   <link rel="alternate" type="application/rss+xml" title="Urban Nilsson" href="http://www.kunudu.com/feed.xml">
 </head>
 
@@ -55,43 +54,46 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <ul class="post-list articles_container">
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/mothership.html">
-                    <div class="article_header">Mothership</div>
-                    <img class="screenshot" src="images/mothership.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/chip8.html">
-                    <div class="article_header">Chip-8</div>
-                    <img class="screenshot" src="images/chip8.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/usnes.html">
-                    <div class="article_header">USNES</div>
-                    <img class="screenshot" src="images/usnes.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-    </ul>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Chip-8</h1>
+    <!--
+    <time class="post-meta" datetime="2014-10-01T02:00:00+02:00" itemprop="datePublished">Oct 1, 2014</time>
+    -->
+  </header>
 
+  <div class="post-content" itemprop="articleBody">
+    <div class="article_description">
+  My attempt at creating a <a href="http://en.wikipedia.org/wiki/CHIP-8">Chip-8</a> emulator in JavaScript.
 </div>
+
+<div class="chip8_body">
+  <div class="chip8_container">
+    <div class="chip8_header">
+      <span id="chip8_title">Chip-8 VM</span>
+    </div>
+
+    <div id="display">
+      <canvas id="screen"></canvas>
+    </div>
+    <div id="game_selector">
+        <div id="game_section">
+          <!-- placeholder -->
+        </div>
+        <div id="game_browse">
+          <input id="game_file" type="file">
+        </div>
+    </div>
+  </div>
+
+  <script src="/scripts/chip8vm.min.js"></script>
+</div>
+
+  </div>
+
+</article>
+
       </div>
     </div>
 
