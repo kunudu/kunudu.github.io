@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Urban Nilsson</title>
-  <meta name="description" content="My experimentations in the world of programming
-">
+  <title>Raycast</title>
+  <meta name="description" content="    A raycast engine in TypeScript.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.kunudu.com/">
+  <link rel="canonical" href="http://www.kunudu.com/2016/02/21/raycast.html">
   <link rel="alternate" type="application/rss+xml" title="Urban Nilsson" href="http://www.kunudu.com/feed.xml">
 </head>
 
@@ -55,53 +54,36 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <ul class="post-list articles_container">
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2016/02/21/raycast.html">
-                    <div class="article_header">Raycast</div>
-                    <img class="screenshot" src="images/raycast.png"></img>
-                    <div class="article_footer">Feb 21, 2016</div>
-                </a>
-            </article>
-        </li>
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/mothership.html">
-                    <div class="article_header">Mothership</div>
-                    <img class="screenshot" src="images/mothership.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/chip8.html">
-                    <div class="article_header">Chip-8</div>
-                    <img class="screenshot" src="images/chip8.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-        <li>
-            <article class="article_container">
-                <a class="post-link" href="/2014/10/01/usnes.html">
-                    <div class="article_header">USNES</div>
-                    <img class="screenshot" src="images/usnes.png"></img>
-                    <div class="article_footer">Oct 1, 2014</div>
-                </a>
-            </article>
-        </li>
-        
-    </ul>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Raycast</h1>
+    <!--
+    <time class="post-meta" datetime="2016-02-21T04:00:00+01:00" itemprop="datePublished">Feb 21, 2016</time>
+    -->
+  </header>
 
+  <div class="post-content" itemprop="articleBody">
+    <div class="article_description">
+    <span>A raycast engine in <a href="http://www.typescriptlang.org/">TypeScript</a>.</span>
 </div>
+
+<div class="text-center">
+    <canvas id="screen"></canvas>
+</div>
+
+<script src="/scripts/raycast.min.js"></script>
+
+<script>
+    window.onload = function() {
+        var main = new Game.Main('/images/raycast/');
+        main.run();
+    };
+</script>
+  </div>
+
+</article>
+
       </div>
     </div>
 
