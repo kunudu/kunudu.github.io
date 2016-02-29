@@ -503,6 +503,27 @@ pre {
   padding: 15px 0px 15px 0px;
   text-align: center; }
 
+.article_body {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center; }
+
+.flexy_list {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center; }
+  .flexy_list ul {
+    list-style: none;
+    text-align: left; }
+  .flexy_list li p {
+    padding-top: 10px; }
+  .flexy_list img {
+    padding: 10px; }
+
 .usnes_iframe {
   width: 100%;
   border: 0;
